@@ -3,6 +3,7 @@
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
   .header {
     padding-top: 30px;
@@ -41,4 +42,69 @@
       }
     }
   }
+
+  .slogan {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    padding: 10px 0px 10px 160px;
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 1;
+    color: #ffffff;
+    background-color: rgba(36, 178, 150, 0.5);
+  }
+
+  .companies {
+    width: 100%;
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    div {
+      background-color: rgba(0, 0, 0, 0.3);
+      background-size: cover;
+      height: 120px;
+
+      &.link {
+
+      }
+    }
+  }
+}
+
+.products {
+  margin-left: 0;
+
+  & > div {
+    height: 140px;
+    background-image: url(../img/printer.png), url(../img/graybg.png);
+    background-size: 50%, cover;
+    background-position: bottom right;
+    background-repeat: no-repeat, repeat-x;
+
+    .text {
+      background-color: transparent;
+      width: 100px;
+      text-align: center;
+      padding-left: 20px;
+      padding-top: 50px;
+
+      .en {
+        margin-bottom: 2px;
+        font-size: 20px;
+      }
+
+      .cn {
+      }
+    }
+  }
+}
+
+.service {
+  padding: 20px 0 400px 0;
+  background-color: gray;
+  text-align: center;
+  font-size: 20px;
 }
