@@ -24,6 +24,7 @@
 .header-wapper .header .nav li a {
   color: #ffffff;
   padding: 10px 20px;
+  font-size: 13px;
 }
 .header-wapper .header .nav li a:first-child {
   border-top-left-radius: 5px;
