@@ -1,3 +1,44 @@
-.logo{
+.header-wapper {
+  height: 650px;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  .header {
+    padding-top: 30px;
+
+    .logo {
+      height: 47px;
+      background: url('../img/logo-w.png') no-repeat;
+      background-position: center right;
+    }
+
+    .nav {
+      background-color: rgba(20, 25, 31, 0.5);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+
+      li {
+        float: left;
+
+        a {
+          color: #ffffff;
+          padding: 10px 20px;
+
+          &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+
+          &:hover {
+            background-color: rgba(20, 25, 31, 0.2);
+          }
+        }
+
+        &:hover {
+
+        }
+      }
+    }
+  }
 }

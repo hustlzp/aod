@@ -1,0 +1,33 @@
+.header-wapper {
+  height: 650px;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-wapper .header {
+  padding-top: 30px;
+}
+.header-wapper .header .logo {
+  height: 47px;
+  background: url('../img/logo-w.png') no-repeat;
+  background-position: center right;
+}
+.header-wapper .header .nav {
+  background-color: rgba(20, 25, 31, 0.5);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.header-wapper .header .nav li {
+  float: left;
+}
+.header-wapper .header .nav li a {
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.header-wapper .header .nav li a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.header-wapper .header .nav li a:hover {
+  background-color: rgba(20, 25, 31, 0.2);
+}
