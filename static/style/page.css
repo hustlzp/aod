@@ -44,6 +44,7 @@
   background-color: rgba(36, 178, 150, 0.5);
 }
 .header-wapper .companies {
+  background: rgba(0, 0, 0, 0.4);
   width: 100%;
   margin-left: 0;
   position: absolute;
@@ -51,9 +52,27 @@
   bottom: 0;
 }
 .header-wapper .companies div {
-  background-color: rgba(0, 0, 0, 0.3);
-  background-size: cover;
-  height: 120px;
+  height: 100px;
+}
+.header-wapper .companies div.link {
+  background: transparent url("../img/p1.png") no-repeat center center;
+  background-size: auto 30px;
+}
+.header-wapper .companies div.lri {
+  background: transparent url("../img/p5.png") no-repeat center center;
+  background-size: auto 40px;
+}
+.header-wapper .companies div.kf {
+  background: transparent url("../img/p2.png") no-repeat center center;
+  background-size: auto 55px;
+}
+.header-wapper .companies div.edf {
+  background: transparent url("../img/p4.png") no-repeat center center;
+  background-size: auto 35px;
+}
+.header-wapper .companies div.ae {
+  background: transparent url("../img/p3.png") no-repeat center center;
+  background-size: auto 25px;
 }
 .products {
   margin-left: 0;
