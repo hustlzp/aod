@@ -105,6 +105,7 @@
 .footer-wapper {
   color: #ffffff;
   background: transparent url("../img/footer-bg1.png") no-repeat;
+  -webkit-transition: opacity 4s linear;
   background-size: cover;
 }
 .footer-wapper .title {
@@ -116,13 +117,13 @@
 }
 .footer-wapper .desc {
   color: #ffffff;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .footer-wapper .btn-order {
   color: #ffffff;
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   background-color: #00C8D7;
   border-color: #15959E;
   border-width: 0 1px 3px 1px;
