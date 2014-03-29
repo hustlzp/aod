@@ -136,6 +136,7 @@ body {
   border-right: none;
 }
 .products > div:hover {
+  cursor: pointer;
   background-size: auto 188px, auto;
 }
 .products > div .text {
