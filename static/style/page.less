@@ -28,8 +28,9 @@ body {
 
         a {
           color: #ffffff;
-          padding: 10px 20px;
+          padding: 15px 20px;
           font-size: 13px;
+          line-height: 1;
 
           &:first-child {
             border-top-left-radius: 5px;
@@ -39,6 +40,35 @@ body {
           &:hover {
             background-color: rgba(20, 25, 31, 0.2);
           }
+        }
+      }
+    }
+  }
+
+  .header-fixed {
+    display: none;
+    padding: 20px 0 25px 0;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 0px 5px #aaa;
+
+    .logo {
+      height: 47px;
+      background: url('../img/logo-g.png') no-repeat;
+      background-position: center right;
+    }
+
+    .nav {
+      li {
+        float: left;
+
+        a {
+          padding: 13.5px 20px;
+          color: #333;
         }
       }
     }
