@@ -4,6 +4,7 @@ body {
 
 .header-wapper {
   height: 685px;
+  margin-bottom: 2px;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +95,6 @@ body {
   .companies {
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
-    margin-left: 0;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -134,13 +134,18 @@ body {
   margin-left: 0;
 
   & > div {
-    height: 140px;
+    height: 200px;
+    border-right: 2px solid #ffffff;
     background-image: url(../img/printer.png), url(../img/graybg.png);
     background-size: 50%, auto;
     background-position: bottom right;
     background-repeat: no-repeat, repeat-x;
     -webkit-transition: background-size 0.1s linear;
     transition: background-size 0.1s linear;
+
+    &:last-child {
+      border-right: none;
+    }
 
     &:hover {
       background-size: 52%, auto;
