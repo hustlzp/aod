@@ -1,3 +1,6 @@
+body {
+  min-width: 1100px;
+}
 .header-wapper {
   height: 685px;
   background-image: url("../img/bg.jpg");
