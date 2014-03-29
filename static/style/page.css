@@ -182,3 +182,6 @@ body {
   display: inline-block;
   margin-left: 35px;
 }
+.footer-wapper .footer .links li a {
+  color: #ffffff;
+}
