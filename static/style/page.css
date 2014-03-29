@@ -88,6 +88,9 @@ body {
 .header-wapper .companies div {
   height: 100px;
 }
+.header-wapper .companies div:hover {
+  cursor: pointer;
+}
 .header-wapper .companies div.link {
   background: transparent url("../img/p1.png") no-repeat center center;
   background-size: auto 30px;
