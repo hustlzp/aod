@@ -3,6 +3,37 @@ body {
   overflow-x: hidden;
 }
 
+.header-fixed-wapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 0px 5px #aaa;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 0 25px 0;
+  display: none;
+
+  .header-fixed {
+    height: 47px;
+    background: url('../img/logo-g.png') no-repeat;
+
+    .nav li {
+      float: left;
+
+      a {
+        padding: 18.5px 20px 13.5px 20px;
+        color: #333;
+
+        &:hover {
+          color: #000000;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
 .header-wapper {
   height: 685px;
   margin-bottom: 2px;
@@ -37,43 +68,12 @@ body {
 
         a {
           color: #ffffff;
-          padding: 12px 20px;
+          padding: 14px 20px;
           line-height: 1;
 
           &:hover {
             background-color: rgba(20, 25, 31, 0.45);
           }
-        }
-      }
-    }
-  }
-
-  .header-fixed {
-    display: none;
-    padding: 20px 0 25px 0;
-    background: rgba(255, 255, 255, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100%;
-    box-shadow: 0 0px 5px #aaa;
-
-    .logo {
-      height: 47px;
-      background: url('../img/logo-g.png') no-repeat;
-      background-position: center right;
-    }
-
-    .nav li {
-      float: left;
-
-      a {
-        padding: 13.5px 20px;
-        color: #333;
-
-        &:hover {
-          background-color: #ddd;
         }
       }
     }

@@ -17,6 +17,21 @@
 
 <body>
 
+<div class="header-fixed-wapper">
+  <div class="header-fixed container clearfix">
+    <ul class="nav pull-right clearfix">
+      <li><a href="#">Artist</a></li>
+      <li><a href="#">Dreamer</a></li>
+      <li><a href="#">Edu</a></li>
+      <li><a href="#">Mini</a></li>
+      <li><a href="#">3D打印服务</a></li>
+      <li><a href="#">3D打印时尚产品</a></li>
+      <li><a href="#">耗材</a></li>
+      <li><a href="#">模型下载</a></li>
+    </ul>
+  </div>
+</div>
+
 <div class="header-wapper">
   <div class="row header container clearfix">
     <ul class="nav clearfix">
@@ -29,23 +44,6 @@
       <li><a href="#">耗材</a></li>
       <li><a href="#">模型下载</a></li>
     </ul>
-  </div>
-
-  <div class="header-fixed clearfix">
-    <div class="logo col-xs-3"></div>
-
-    <div class="col-xs-8 col-xs-offset-1">
-      <ul class="nav clearfix">
-        <li><a href="#">Artist</a></li>
-        <li><a href="#">Dreamer</a></li>
-        <li><a href="#">Edu</a></li>
-        <li><a href="#">Mini</a></li>
-        <li><a href="#">3D打印服务</a></li>
-        <li><a href="#">3D打印时尚产品</a></li>
-        <li><a href="#">耗材</a></li>
-        <li><a href="#">模型下载</a></li>
-      </ul>
-    </div>
   </div>
 
   <div class="slogan"></div>
@@ -98,6 +96,7 @@
 <div class="footer-wapper clearfix footer-bg3">
   <div class="text-center">
     <p class="title"></p>
+
     <p class="desc">其他说明其他说明其他说明其他说明其他说明</p>
     <a href="#" class="btn btn-default btn-lg btn-order">马上预订</a>
   </div>
@@ -122,9 +121,9 @@
   function toggleNav() {
     if ($(this).scrollTop() > 50) {
       $('.header').fadeOut();
-      $('.header-fixed').fadeIn();
+      $('.header-fixed-wapper').fadeIn();
     } else {
-      $('.header-fixed').fadeOut();
+      $('.header-fixed-wapper').fadeOut();
       $('.header').fadeIn(800);
     }
   }
