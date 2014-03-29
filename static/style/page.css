@@ -13,9 +13,12 @@ body {
   padding: 20px 0 25px 0;
   display: none;
 }
-.header-fixed-wapper .header-fixed {
+.header-fixed-wapper .header-fixed .logo {
+  float: left;
+  display: block;
   height: 47px;
-  background: url('../img/logo-g.png') no-repeat;
+  width: 127px;
+  background: url('../img/logo-g.png') no-repeat top left;
 }
 .header-fixed-wapper .header-fixed .nav li {
   float: left;
