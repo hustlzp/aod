@@ -99,7 +99,7 @@
 
 <div class="service">我们的服务</div>
 
-<div class="footer-wapper clearfix">
+<div class="footer-wapper clearfix footer-bg1">
   <div class="text-center">
     <p class="title">即刻畅想3D打印乐趣</p>
 
@@ -132,8 +132,19 @@
     }
   }
 
+  var index = 0;
+  var classes = ['footer-bg1', 'footer-bg2', 'footer-bg3'];
+
+  function changeFooterBg() {
+    index = (index + 1) % 3;
+    $('.footer-wapper').removeClass('footer-bg1 footer-bg2 footer-bg3').addClass(classes[index]);
+  }
+
   $(function () {
     toggleNav();
+
+    changeFooterBg();
+    setInterval(changeFooterBg, 5000);
 
     $(window).scroll(function () {
       toggleNav();
