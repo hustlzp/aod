@@ -48,7 +48,7 @@ body {
   .header-fixed {
     display: none;
     padding: 20px 0 25px 0;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.9);
     position: fixed;
     top: 0;
     left: 0;
@@ -62,13 +62,15 @@ body {
       background-position: center right;
     }
 
-    .nav {
-      li {
-        float: left;
+    .nav li {
+      float: left;
 
-        a {
-          padding: 13.5px 20px;
-          color: #333;
+      a {
+        padding: 13.5px 20px;
+        color: #333;
+
+        &:hover {
+          background-color: #ddd;
         }
       }
     }
@@ -134,6 +136,12 @@ body {
     background-size: 50%, auto;
     background-position: bottom right;
     background-repeat: no-repeat, repeat-x;
+    -webkit-transition: background-size 0.1s linear;
+    transition: background-size 0.1s linear;
+
+    &:hover {
+      background-size: 52%, auto;
+    }
 
     .text {
       background-color: transparent;

@@ -40,7 +40,7 @@ body {
 .header-wapper .header-fixed {
   display: none;
   padding: 20px 0 25px 0;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
   position: fixed;
   top: 0;
   left: 0;
@@ -59,6 +59,9 @@ body {
 .header-wapper .header-fixed .nav li a {
   padding: 13.5px 20px;
   color: #333;
+}
+.header-wapper .header-fixed .nav li a:hover {
+  background-color: #ddd;
 }
 .header-wapper .slogan {
   position: absolute;
@@ -111,6 +114,11 @@ body {
   background-size: 50%, auto;
   background-position: bottom right;
   background-repeat: no-repeat, repeat-x;
+  -webkit-transition: background-size 0.1s linear;
+  transition: background-size 0.1s linear;
+}
+.products > div:hover {
+  background-size: 52%, auto;
 }
 .products > div .text {
   background-color: transparent;

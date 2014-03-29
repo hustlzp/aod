@@ -99,7 +99,7 @@
 
 <div class="service">我们的服务</div>
 
-<div class="footer-wapper clearfix footer-bg1">
+<div class="footer-wapper clearfix footer-bg3">
   <div class="text-center">
     <p class="title">即刻畅想3D打印乐趣</p>
 
@@ -121,6 +121,8 @@
   </div>
 </div>
 
+<img src="static/img/footer-bg3.png" class="hidden" alt=""/>
+
 <script type="text/javascript">
   function toggleNav() {
     if ($(this).scrollTop() > 50) {
@@ -141,6 +143,7 @@
   }
 
   $(function () {
+    $('.header-wapper').height($(window).height())
     toggleNav();
 
     changeFooterBg();
@@ -148,6 +151,10 @@
 
     $(window).scroll(function () {
       toggleNav();
+      var height = $(window).height() + $(this).scrollTop();
+      if (height <= 685) {
+        $('.header-wapper').height(height);
+      }
     });
   });
 </script>
