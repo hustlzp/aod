@@ -169,7 +169,7 @@ body {
   background: transparent url("../img/footer-bg3.png") no-repeat;
 }
 .footer-wapper {
-  padding-top: 100px;
+  padding-top: 150px;
   color: #ffffff;
   -webkit-transition: background 4s linear;
   transition: background 4s linear;
@@ -184,6 +184,7 @@ body {
 .footer-wapper .desc {
   color: #ffffff;
   margin-bottom: 80px;
+  letter-spacing: 1px;
 }
 .footer-wapper .btn-order {
   color: #ffffff;
