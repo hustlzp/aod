@@ -1,45 +1,47 @@
 body {
   min-width: 1200px;
+  overflow-x: hidden;
 }
 
 .header-wapper {
   height: 685px;
   margin-bottom: 2px;
+  padding-top: 30px;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
   .header {
-    padding-top: 30px;
-
-    .logo {
-      height: 47px;
-      background: url('../img/logo-w.png') no-repeat;
-      background-position: center right;
-    }
+    position: relative;
+    height: 47px;
+    background: url('../img/logo-w.png') no-repeat top left;
 
     .nav {
       background-color: rgba(20, 25, 31, 0.5);
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding-right: 1000px;
+      margin-right: -1000px;
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
 
       li {
         float: left;
 
+        &:first-child a {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+
         a {
           color: #ffffff;
-          padding: 15px 20px;
-          font-size: 13px;
+          padding: 12px 20px;
           line-height: 1;
 
-          &:first-child {
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-          }
-
           &:hover {
-            background-color: rgba(20, 25, 31, 0.2);
+            background-color: rgba(20, 25, 31, 0.45);
           }
         }
       }
@@ -196,7 +198,7 @@ body {
     width: 462px;
     height: 45px;
     margin: 0 auto 30px auto;
-    background: transparent url('../img/slogan2.png') no-repeat ;
+    background: transparent url('../img/slogan2.png') no-repeat;
   }
 
   .desc {

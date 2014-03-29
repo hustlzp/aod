@@ -1,42 +1,45 @@
 body {
   min-width: 1200px;
+  overflow-x: hidden;
 }
 .header-wapper {
   height: 685px;
   margin-bottom: 2px;
+  padding-top: 30px;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 .header-wapper .header {
-  padding-top: 30px;
-}
-.header-wapper .header .logo {
+  position: relative;
   height: 47px;
-  background: url('../img/logo-w.png') no-repeat;
-  background-position: center right;
+  background: url('../img/logo-w.png') no-repeat top left;
 }
 .header-wapper .header .nav {
   background-color: rgba(20, 25, 31, 0.5);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 1000px;
+  margin-right: -1000px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 .header-wapper .header .nav li {
   float: left;
 }
-.header-wapper .header .nav li a {
-  color: #ffffff;
-  padding: 15px 20px;
-  font-size: 13px;
-  line-height: 1;
-}
-.header-wapper .header .nav li a:first-child {
+.header-wapper .header .nav li:first-child a {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.header-wapper .header .nav li a {
+  color: #ffffff;
+  padding: 12px 20px;
+  line-height: 1;
+}
 .header-wapper .header .nav li a:hover {
-  background-color: rgba(20, 25, 31, 0.2);
+  background-color: rgba(20, 25, 31, 0.45);
 }
 .header-wapper .header-fixed {
   display: none;
