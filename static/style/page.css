@@ -39,6 +39,9 @@ body {
 }
 .header-wapper .header {
   position: relative;
+}
+.header-wapper .header .logo {
+  display: block;
   height: 47px;
   background: url('../img/logo-w.png') no-repeat top left;
 }
