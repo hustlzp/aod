@@ -191,11 +191,17 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 200px;
-  background-color: #00C8D7;
-  border-color: #15959E;
+  background-color: #24B296;
+  border-color: #1b8872;
   border-width: 0 0 3px 0;
   border-radius: 3px;
   font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.footer-wapper .btn-order:hover {
+  background-color: #26ba9d;
+  border-color: #1d9079;
 }
 .footer-wapper .footer {
   font-size: 13px;
