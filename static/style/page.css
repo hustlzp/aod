@@ -1,7 +1,7 @@
 body {
   min-width: 1200px;
   overflow-x: hidden;
-  font-family: sans-serif;
+  font-family: arial, sans-serif;
 }
 .header-fixed-wapper {
   position: fixed;
@@ -163,11 +163,11 @@ body {
   -webkit-transition: height 0.1s linear;
   transition: height 0.1s linear;
 }
-.service {
-  padding: 20px 0 600px 0;
-  background-color: gray;
-  text-align: center;
-  font-size: 20px;
+.market {
+  height: 500px;
+}
+.market.market-first {
+  background: #ffffff url('../img/bg-square.png') repeat;
 }
 .footer-bg1 {
   background: transparent url("../img/footer-bg1.png") no-repeat;
