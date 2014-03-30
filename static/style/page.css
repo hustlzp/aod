@@ -120,9 +120,10 @@ body {
   background-size: auto 25px;
 }
 .products {
+  position: relative;
   margin-left: 0;
 }
-.products > div {
+.products .product {
   height: 200px;
   position: relative;
   overflow-x: hidden;
@@ -132,29 +133,29 @@ body {
   -webkit-transition: background-size 0.1s linear;
   transition: background-size 0.1s linear;
 }
-.products > div:last-child {
+.products .product:last-child {
   border-right: none;
 }
-.products > div:hover {
+.products .product:hover {
   cursor: pointer;
 }
-.products > div:hover .product-img {
+.products .product:hover .product-img {
   height: 190px;
 }
-.products > div .text {
+.products .product .text {
   background-color: transparent;
   width: 38%;
   text-align: center;
   padding-top: 75px;
 }
-.products > div .text .en {
+.products .product .text .en {
   margin-bottom: 2px;
   font-size: 20px;
 }
-.products > div .text .cn {
+.products .product .text .cn {
   font-size: 13px;
 }
-.products > div .product-img {
+.products .product .product-img {
   display: block;
   position: absolute;
   bottom: 0;

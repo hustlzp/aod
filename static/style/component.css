@@ -1,0 +1,9 @@
+.shadow {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  z-index: 100000;
+  background: transparent url("../img/shadow.png") no-repeat top center;
+}
