@@ -125,6 +125,7 @@ body {
 .products > div {
   height: 200px;
   position: relative;
+  overflow-x: hidden;
   border-right: 2px solid #ffffff;
   background-image: url(../img/graybg.png);
   background-repeat: repeat-x;
