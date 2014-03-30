@@ -1,6 +1,7 @@
 body {
   min-width: 1200px;
   overflow-x: hidden;
+  font-family: sans-serif;
 }
 
 .header-fixed-wapper {
@@ -150,11 +151,14 @@ body {
 
   & > div {
     height: 200px;
+    position: relative;
     border-right: 2px solid #ffffff;
-    background-image: url(../img/printer.png), url(../img/graybg.png);
-    background-size: auto 180px, auto;
-    background-position: 140% 100%, 0 0;
-    background-repeat: no-repeat, repeat-x;
+    //    background-image: url(../img/printer.png), url(../img/graybg.png);
+    //    background-size: auto 180px, auto;
+    //    background-position: 140% 100%, 0 0;
+    //    background-repeat: no-repeat, repeat-x;
+    background-image: url(../img/graybg.png);
+    background-repeat: repeat-x;
     -webkit-transition: background-size 0.1s linear;
     transition: background-size 0.1s linear;
 
@@ -164,14 +168,13 @@ body {
 
     &:hover {
       cursor: pointer;
-      background-size: auto 188px, auto;
+      //      background-size: auto 188px, auto;
     }
 
     .text {
       background-color: transparent;
-      width: 100px;
+      width: 38%;
       text-align: center;
-      padding-left: 20px;
       padding-top: 75px;
 
       .en {
@@ -181,6 +184,20 @@ body {
 
       .cn {
         font-size: 13px;
+      }
+    }
+
+    .product-img {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 38%;
+      height: 180px;
+      -webkit-transition: height 0.1s linear;
+      transition: height 0.1s linear;
+
+      &:hover {
+        height: 190px;
       }
     }
   }
