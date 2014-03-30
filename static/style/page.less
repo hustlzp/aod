@@ -296,8 +296,22 @@ body {
     height: 200px;
 
     .cus {
+      position: relative;
       height: 200px;
       background: transparent url('../img/customer.png') no-repeat center center;
+
+      &.active {
+        .arrow-up {
+          display: block
+        }
+      }
+      .arrow-up {
+        display: none;
+        position: absolute;
+        top: -11px;
+        left: 50%;
+        margin-left: -11px;
+      }
     }
   }
 }

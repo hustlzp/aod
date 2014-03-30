@@ -242,8 +242,19 @@ body {
   height: 200px;
 }
 .voices .customers .cus {
+  position: relative;
   height: 200px;
   background: transparent url('../img/customer.png') no-repeat center center;
+}
+.voices .customers .cus.active .arrow-up {
+  display: block;
+}
+.voices .customers .cus .arrow-up {
+  display: none;
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
 }
 .footer-bg1 {
   background: transparent url("../img/footer-bg1.png") no-repeat;
