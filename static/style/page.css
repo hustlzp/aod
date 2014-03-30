@@ -182,7 +182,7 @@ body {
   border-bottom-left-radius: 5px;
 }
 .market.market-first .detail {
-  padding-right: 180px;
+  padding-right: 20%;
 }
 .market.market-second .img {
   height: 500px;
@@ -197,7 +197,7 @@ body {
   border-bottom-right-radius: 5px;
 }
 .market.market-second .detail {
-  padding: 0 100px 0 70px;
+  padding: 0 100px 0 10%;
 }
 .footer-bg1 {
   background: transparent url("../img/footer-bg1.png") no-repeat;
