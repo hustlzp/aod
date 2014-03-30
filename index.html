@@ -69,6 +69,7 @@
   <div class="col-xs-3">
     <div class="text">
       <p class="en">Artist</p>
+
       <p class="cn">只为艺术</p>
     </div>
     <img src="static/img/printer.png" class="product-img" alt=""/>
@@ -77,6 +78,7 @@
   <div class="col-xs-3">
     <div class="text">
       <p class="en">Dreamer</p>
+
       <p class="cn">梦想成真</p>
     </div>
     <img src="static/img/printer.png" class="product-img" alt=""/>
@@ -85,6 +87,7 @@
   <div class="col-xs-3">
     <div class="text">
       <p class="en">Edu</p>
+
       <p class="cn">诲人不倦</p>
     </div>
     <img src="static/img/printer.png" class="product-img" alt=""/>
@@ -93,6 +96,7 @@
   <div class="col-xs-3">
     <div class="text">
       <p class="en">Mini</p>
+
       <p class="cn">小有乾坤</p>
     </div>
     <img src="static/img/printer.png" class="product-img" alt=""/>
@@ -126,6 +130,8 @@
 <img src="static/img/footer-bg3.png" class="hidden" alt=""/>
 
 <script type="text/javascript">
+  // 当window往下滚动超过50px时，显示header-fixed
+  // 否则显示header
   function toggleNav() {
     if ($(this).scrollTop() > 50) {
       $('.header').fadeOut();
@@ -136,6 +142,7 @@
     }
   }
 
+  // 轮换更新footer的背景图片
   var index = 0;
   var classes = ['footer-bg1', 'footer-bg2', 'footer-bg3'];
 
@@ -145,16 +152,24 @@
   }
 
   $(function () {
-    $('.header-wapper').css('height', $(window).height() + 'px');
+    // 设置header-wapper的高度=window高度，以保证companies部分正好处于窗口底部
+    // 当window的高度>背景图片的最大高度时，不设置
+    var wHeight = $(window).height();
+    if (wHeight < 2200) {
+      $('.header-wapper').css('height', wHeight + 'px');
+    }
+
     toggleNav();
 
+    // 每隔5s更换背景
     changeFooterBg();
     setInterval(changeFooterBg, 5000);
 
     $(window).scroll(function () {
       toggleNav();
+      // 如果页面顶部到窗口底部的距离小于700，则保持companies部分在窗口底部
       var height = $(window).height() + $(this).scrollTop();
-      if (height <= 685) {
+      if (height <= 700) {
         $('.header-wapper').css('height', height + 'px');
       }
     });
