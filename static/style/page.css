@@ -208,8 +208,8 @@ body {
   margin-right: 90px;
 }
 .voices .title {
-  height: 110px;
-  background: transparent url('../img/oa.png') no-repeat center 80px;
+  height: 120px;
+  background: transparent url('../img/oa.png') no-repeat center 90px;
   margin-bottom: 20px;
 }
 .voices .content {
@@ -220,9 +220,16 @@ body {
   height: 60px;
   background: transparent url('../img/oa.png') no-repeat 0 -55px;
 }
-.voices .content .cus-say {
+.voices .content .cus-says {
   font-size: 18px;
   padding: 0 20px 0 25px;
+}
+.voices .content .cus-says .say {
+  line-height: 1.6;
+  display: none;
+}
+.voices .content .cus-says .say.active {
+  display: block;
 }
 .voices .content .right-quote {
   margin-top: 30px;

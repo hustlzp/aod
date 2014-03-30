@@ -136,12 +136,22 @@
     <div class="content clearfix">
       <div class="col-xs-1 col-xs-offset-1 left-quote">
       </div>
-      <div class="col-xs-8 cus-say">
-        <div>我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉</div>
-        <!--<div></div>-->
-        <!--<div></div>-->
-        <!--<div></div>-->
-        <!--<div></div>-->
+      <div class="col-xs-8 cus-says">
+        <div id="say1" class="say active">
+          A真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉
+        </div>
+        <div id="say2" class="say">
+          B真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉
+        </div>
+        <div id="say3" class="say">
+          C真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉
+        </div>
+        <div id="say4" class="say">
+          D真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉
+        </div>
+        <div id="say5" class="say">
+          E真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉我真的没有想到巴拉巴拉巴拉巴拉
+        </div>
       </div>
       <div class="col-xs-1">
         <div class="right-quote pull-right"></div>
@@ -151,11 +161,11 @@
 
   <div class="customers">
     <div class="container">
-      <div class="col-xs-offset-1 col-xs-2 cus"></div>
-      <div class="col-xs-2 cus"></div>
-      <div class="col-xs-2 cus"></div>
-      <div class="col-xs-2 cus"></div>
-      <div class="col-xs-2 cus"></div>
+      <div class="col-xs-offset-1 col-xs-2 cus" data-target="say1"></div>
+      <div class="col-xs-2 cus" data-target="say2"></div>
+      <div class="col-xs-2 cus" data-target="say3"></div>
+      <div class="col-xs-2 cus" data-target="say4"></div>
+      <div class="col-xs-2 cus" data-target="say5"></div>
     </div>
   </div>
 </div>
@@ -220,6 +230,7 @@
     changeFooterBg();
     setInterval(changeFooterBg, 5000);
 
+    // window滚动时的交互
     $(window).scroll(function () {
       toggleNav();
       // 如果页面顶部到窗口底部的距离小于700，则保持companies部分在窗口底部
@@ -227,6 +238,13 @@
       if (height <= 700) {
         $('.header-wapper').css('height', height + 'px');
       }
+    });
+
+    // 切换用户感言
+    $('.cus').hover(function () {
+      var targetId = $(this).attr('data-target');
+      $('.say').removeClass('active');
+      $('#' + targetId).addClass('active');
     });
   });
 </script>

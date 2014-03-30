@@ -255,8 +255,8 @@ body {
 
 .voices {
   .title {
-    height: 110px;
-    background: transparent url('../img/oa.png') no-repeat center 80px;
+    height: 120px;
+    background: transparent url('../img/oa.png') no-repeat center 90px;
     margin-bottom: 20px;
   }
 
@@ -269,9 +269,18 @@ body {
       background: transparent url('../img/oa.png') no-repeat 0 -55px;
     }
 
-    .cus-say {
+    .cus-says {
       font-size: 18px;
       padding: 0 20px 0 25px;
+
+      .say {
+        line-height: 1.6;
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
     }
 
     .right-quote {
