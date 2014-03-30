@@ -194,7 +194,6 @@ body {
       height: 180px;
       -webkit-transition: height 0.1s linear;
       transition: height 0.1s linear;
-
     }
   }
 }
@@ -204,10 +203,44 @@ body {
 
   &.market-first {
     background: #ffffff url('../img/bg-square.png') repeat;
+
+    .img {
+      height: 500px;
+      background: transparent url('../img/transf.png') no-repeat center center;
+    }
+
+    .title {
+      margin: 180px -1000px 35px 0;
+      height: 55px;
+      background: rgb(36, 178, 150) url("../img/ads.png") no-repeat;
+      background-position: 15px 10px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .detail {
+      padding-right: 180px;
+    }
   }
 
   &.market-second {
+    .img {
+      height: 500px;
+      background: transparent url('../img/toy.png') no-repeat center center;
+    }
 
+    .title {
+      margin: 140px 100px 35px -1000px;
+      height: 55px;
+      background: rgb(36, 178, 150) url("../img/ads.png") no-repeat;
+      background-position: 1130px -66px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .detail {
+      padding: 0 100px 0 70px;
+    }
   }
 }
 

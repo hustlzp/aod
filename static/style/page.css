@@ -169,6 +169,36 @@ body {
 .market.market-first {
   background: #ffffff url('../img/bg-square.png') repeat;
 }
+.market.market-first .img {
+  height: 500px;
+  background: transparent url('../img/transf.png') no-repeat center center;
+}
+.market.market-first .title {
+  margin: 180px -1000px 35px 0;
+  height: 55px;
+  background: #24b296 url("../img/ads.png") no-repeat;
+  background-position: 15px 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.market.market-first .detail {
+  padding-right: 180px;
+}
+.market.market-second .img {
+  height: 500px;
+  background: transparent url('../img/toy.png') no-repeat center center;
+}
+.market.market-second .title {
+  margin: 140px 100px 35px -1000px;
+  height: 55px;
+  background: #24b296 url("../img/ads.png") no-repeat;
+  background-position: 1130px -66px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.market.market-second .detail {
+  padding: 0 100px 0 70px;
+}
 .footer-bg1 {
   background: transparent url("../img/footer-bg1.png") no-repeat;
 }
