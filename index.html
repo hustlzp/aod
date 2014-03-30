@@ -145,7 +145,7 @@
   }
 
   $(function () {
-    $('.header-wapper').height($(window).height())
+    $('.header-wapper').css('height', $(window).height() + 'px');
     toggleNav();
 
     changeFooterBg();
@@ -155,7 +155,7 @@
       toggleNav();
       var height = $(window).height() + $(this).scrollTop();
       if (height <= 685) {
-        $('.header-wapper').height(height);
+        $('.header-wapper').css('height', height + 'px');
       }
     });
   });
