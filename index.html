@@ -155,6 +155,7 @@
     // 设置header-wapper的高度=window高度，以保证companies部分正好处于窗口底部
     // 当window的高度>背景图片的最大高度时，不设置
     var wHeight = $(window).height();
+    alert(wHeight);
     if (wHeight < 2200) {
       $('.header-wapper').css('height', wHeight + 'px');
     }
